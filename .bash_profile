@@ -1,10 +1,11 @@
 alias ls='ls -hG'
 alias ll='ls -la'
-alias up='. ~/bin/update.sh'
-alias status='. ~/bin/status.sh'
-alias svn=/Users/jhardman/bin/svn-color.py
+alias svn=/Users/jhardman/dotfiles/scripts/svn-color.py
 
-export PATH=/usr/local/bin/svn:/usr/local/zend/bin:$PATH
+# Disable suspend
+stty -ixon
+
+export PATH=/usr/local/bin:/usr/local/bin/svn:/usr/local/zend/bin:/Users/jhardman/dotfiles/scripts:$PATH
 
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 
